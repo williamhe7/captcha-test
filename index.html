@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CAPTCHA Model Test</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    margin: 40px;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+input {
+    font-size: 20px;
+}
+
+button {
+    padding:10px;
+    margin:5px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>CAPTCHA Test Environment</h1>
+
+
+<canvas id="captcha"
+        width="300"
+        height="100">
+</canvas>
+
+
+<br><br>
+
+
+<input id="answer"
+       placeholder="Enter CAPTCHA">
+
+
+<button onclick="checkCaptcha()">
+Submit
+</button>
+
+
+<button onclick="newCaptcha()">
+New CAPTCHA
+</button>
+
+
+<p id="result"></p>
+
+
+<h3>Mouse statistics</h3>
+
+<p id="mouseData"></p>
+
+
+
+<script src="captcha.js"></script>
+<script src="model.js"></script>
+
+
+</body>
+
+</html>
